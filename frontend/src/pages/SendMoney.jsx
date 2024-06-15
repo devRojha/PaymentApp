@@ -57,7 +57,7 @@ export function SendMoney(){
                         }) 
                         if(response.data.message == "Transfer successful"){
                             setTimeout(()=>{
-                                navigate("/dashboard")
+                                navigate("/")
                             },3000),
                             navigate("/successfull")
                         }

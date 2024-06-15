@@ -4,7 +4,6 @@ import { Button } from "../components/Button"
 import { Heading } from "../components/Heading"
 import { InputBox } from "../components/InputBox"
 import { SubHeading } from "../components/SubHeading"
-import { set } from "mongoose"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 
@@ -38,7 +37,7 @@ export function Signup(){
                         // localStorage.setItem("token", "");  for delete token when logout
                         // localStorage.removeItem("token");
                         if(response.data.message == "User created successfully"){
-                            navigate("/dashboard")
+                            navigate("/")
                         }
                         else{
                             alert(response.data.message);

@@ -28,7 +28,7 @@ export function Signin(){
                         })
                         localStorage.setItem("token", response.data.token);
                         if(response.data.message == "User Login successfully"){
-                            navigate("/dashboard")
+                            navigate("/")
                         }
                     }} label={"Sign in"} />
                 </div>
