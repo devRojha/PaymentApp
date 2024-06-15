@@ -16,7 +16,7 @@ npm install
 node index.js
 
 //another terminal for frontend
-cd backend
+cd frontend
 npm install
 npm run dev
 ```
